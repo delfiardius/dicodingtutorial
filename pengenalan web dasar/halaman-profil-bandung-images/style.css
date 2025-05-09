@@ -2,21 +2,33 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-nav ul li a {
+/* nav */
+nav a {
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-h1 {
-    color: limegreen;
+nav a:hover {
+    font-weight: bold;
 }
 
+/* main */
 h2,
 h3 {
     color: #00a2c6;
 }
 
+/* aside */
+.profile header {
+    text-align: center;
+}
+
+/* footer */
 footer {
     padding: 20px;
     color: white;
     background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
 }
