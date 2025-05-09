@@ -10,3 +10,15 @@ blockquote::after {
     font-style: italic;
     font-weight: bold;
 }
+
+p {
+    margin: 20px;
+    width: 300px;
+    text-align: justify;
+}
+
+p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: saddlebrown;
+}
