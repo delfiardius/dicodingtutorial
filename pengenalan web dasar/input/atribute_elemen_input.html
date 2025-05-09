@@ -10,205 +10,153 @@
     <main>
       <div class="content">
         <h2>Atribut Elemen Input</h2>
-        <a href="index.html" class="back-to-element-page">kembali ke halaman elemen input</a>
+        <a href="index.html" class="back-to-element-page"
+          >kembali ke halaman elemen input</a
+        >
+
+        <p>
+          Untuk atribut input, ada atribut yang bekerja untuk semua tipe input
+          dan ada atribut yang hanya dikhususkan bagi satu tipe. <br />
+          <br />
+          Berikut adalah contoh penerapan atribut placeholder dan required.
+          <br /><br />
+        </p>
+
+        <div>
+          <label for="email">Email</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            placeholder="example@mail.com"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <br />
+          <input type="password" id="password" placeholder="*******" required />
+        </div>
+
+        <br />
+
+        <p>
+          Berikut adalah beberapa atribut yang sering digunakan ketika membangun
+          formulir
+        </p>
+        <br />
         <table>
           <tr>
+            <th>Atribut</th>
             <th>Tipe</th>
-            <th>Bentuk</th>
             <th>Deskripsi</th>
           </tr>
           <tr>
-            <td>"text"</td>
+            <td>name</td>
+            <td>semua tipe</td>
             <td>
-              <label for="name">Name: </label
-              ><input type="text" placeholder="ini type text" id="name" />
-            </td>
-            <td>
-              Input teks yang berisi satu baris. Ini adalah tipe default dari
-              input elemen. Jika tidak menentukan tipenya, tipe text-lah yang
-              akan diterapkan.
+              Menamai elemen input. Data yang diisikan oleh user akan dikirimkan
+              saat formulir di-submit. Atribut ini memiliki peran yang sangat
+              penting. Jika tidak menyertakannya, data input tidak akan dikirim
+              ke server.
             </td>
           </tr>
           <tr>
-            <td>"number"</td>
+            <td>placeholder</td>
+            <td>text, search, url, tel, email, password, number</td>
             <td>
-              <label for="project">Jumlah Project: </label
-              ><input
-                type="number"
-                placeholder="ini type number"
-                id="project"
-              />
-            </td>
-            <td>Input teks yang hanya mengizinkan format angka.</td>
-          </tr>
-          <tr>
-            <td>"password"</td>
-            <td>
-              <label for="password">Jumlah Project: </label
-              ><input
-                type="password"
-                placeholder="ini type password"
-                id="password"
-              />
-            </td>
-            <td>
-              Sama seperti input text, tetapi setiap karakter akan ditampilkan
-              sebagai bintang.
+              Teks “samar” yang muncul pada kolom input. Teks ini biasanya
+              digunakan sebagai petunjuk atau contoh data yang perlu diisi.
             </td>
           </tr>
           <tr>
-            <td>"email"</td>
+            <td>required</td>
+            <td>semua tipe, kecuali hidden, range, color, dan button</td>
             <td>
-              <label for="email">Email: </label
-              ><input type="email" placeholder="ini type email" id="email" />
-            </td>
-            <td>
-              Sama seperti teks biasa, tetapi input ini dikhususkan untuk format
-              email. Jika tidak, error akan muncul.
+              Atribut ini menyebabkan elemen input wajib diisi untuk di-submit.
+              Ia merupakan atribut boolean.
             </td>
           </tr>
           <tr>
-            <td>"search"</td>
+            <td>value</td>
+            <td>semua tipe, kecuali image</td>
+            <td>Memberikan data awal atau default pada elemen input.</td>
+          </tr>
+          <tr>
+            <td>"autocomplete</td>
+            <td>semua tipe, kecuali checkbox, radio, dan button</td>
             <td>
-              <label for="search">Cari: </label
-              ><input type="search" placeholder="ini type search" id="search" />
-            </td>
-            <td>
-              Input untuk melakukan pencarian berdasarkan kata kunci. Input ini
-              memiliki ikon ✕ di tepi kanan elemen untuk melakukan clear text.
+              Fitur melengkapi input secara otomatis. Biasanya, ini terjadi
+              ketika kita pernah meng-input sesuatu dan pada kesempatan
+              berikutnya, data tersebut akan ditampilkan lagi oleh browser
+              sebagai autocomplete.
             </td>
           </tr>
           <tr>
-            <td>"date"</td>
+            <td>maxlength</td>
+            <td>text, search, url, tel, email, password</td>
             <td>
-              <label for="date">Date: </label
-              ><input type="date" placeholder="ini type date" id="date" />
-            </td>
-            <td>
-              Untuk mengambil data tanggal. Tipe ini akan menyediakan popup
-              penanggalan untuk mempermudah pengisian.
+              Menentukan maksimal panjang karakter yang diperbolehkan pada kolom
+              input.
             </td>
           </tr>
           <tr>
-            <td>"time"</td>
+            <td>max</td>
+            <td>date, month, week, time, datetime-local, number, range</td>
+            <td>Menentukan maksimal nilai yang diperbolehkan.</td>
+          </tr>
+          <tr>
+            <td>minlength</td>
+            <td>text, search, url, tel, email, password</td>
             <td>
-              <label for="time">Time: </label
-              ><input type="time" placeholder="ini type time" id="time" />
-            </td>
-            <td>
-              Menentukan waktu (jam) yang ingin user isi. Tipe input ini juga
-              akan menampilkan visual dari jam.
+              Menentukan minimal panjang karakter yang diperbolehkan pada kolom
+              input.
             </td>
           </tr>
           <tr>
-            <td>"datetime-local"</td>
+            <td>min</td>
+            <td>date, month, week, time, datetime-local, number, range</td>
+            <td>Menentukan minimal nilai yang diperbolehkan.</td>
+          </tr>
+          <tr>
+            <td>checked</td>
+            <td>checkbox, radio</td>
+            <td>Mengaktifkan atau mencentangkan input checkbox.</td>
+          </tr>
+          <tr>
+            <td>accept</td>
+            <td>file</td>
             <td>
-              <label for="datetime">Datetime: </label
-              ><input
-                type="datetime-local"
-                placeholder="ini type datetime"
-                id="datetime"
-              />
-            </td>
-            <td>
-              Sama seperti tipe date, tetapi ia menambahkan data waktu (jam).
+              Panduan atau batasan format berkas apa yang diperbolehkan pada
+              input berkas.
             </td>
           </tr>
           <tr>
-            <td>"checkbox"</td>
+            <td>multiple</td>
+            <td>email, file</td>
+            <td>Memungkinkan pemilihan ganda pada elemen input.</td>
+          </tr>
+          <tr>
+            <td>pattern</td>
+            <td>text, search, url, tel, email, password</td>
             <td>
-              <label for="checkbox">Checkbox: </label
-              ><input
-                type="checkbox"
-                placeholder="ini type checkbox"
-                id="checkbox"
-              />
-            </td>
-            <td>
-              Di-render sebagai sebuah kotak yang dapat dicek untuk active.
+              Menentukan pola yang wajib dipatuhi pada data yang diisi agar
+              dapat valid.
             </td>
           </tr>
           <tr>
-            <td>"radio"</td>
+            <td>readonly</td>
             <td>
-              <label for="radio">Radio: </label
-              ><input type="radio" placeholder="ini type radio" id="radio" />
+              semua tipe, kecuali hidden, range, color, checkbox, radio, dan
+              button
             </td>
-            <td>
-              Pada umumnya, ini digunakan untuk melakukan pemilihan dari sekian
-              opsi (radio button) yang ada. Untuk melakukannya, input ini akan
-              dikelompokkan dalam sebuah radio group. Bukan merupakan suatu
-              elemen, kita dapat memberikan value yang sama pada atribut name di
-              setiap elemen radio.
-            </td>
+            <td>Tidak memiliki akses edit nilai.</td>
           </tr>
           <tr>
-            <td>"range"</td>
-            <td>
-              <label for="range">Range: </label
-              ><input type="range" placeholder="ini type range" id="range" />
-            </td>
-            <td>
-              Menentukan nilai angka berdasarkan jangkauan nilai yang
-              ditentukan. User tidak akan bisa mengambil nilai diluar yang
-              ditentukan.
-            </td>
-          </tr>
-          <tr>
-            <td>"color"</td>
-            <td>
-              <label for="color">Color: </label
-              ><input type="color" placeholder="ini type color" id="color" />
-            </td>
-            <td>
-              User dapat menentukan warna dengan tipe ini, baik menggunakan
-              color picker atau memasukkan format nilai warna secara manual.
-            </td>
-          </tr>
-          <tr>
-            <td>"file"</td>
-            <td>
-              <label for="file">File: </label
-              ><input type="file" placeholder="ini type file" id="file" />
-            </td>
-            <td>
-              Melakukan input satu atau lebih berkas dari penyimpanan data
-              perangkatnya.
-            </td>
-          </tr>
-          <tr>
-            <td>"submit"</td>
-            <td>
-              <label for="submit">Submit: </label
-              ><input type="submit" placeholder="ini type submit" id="submit" />
-            </td>
-            <td>
-              Input yang di-render sebagai tombol submit. Jika tombol ini
-              ditekan, formulir akan ter-submit dan dikirimkan ke tujuan
-              pengiriman (atribut action).
-            </td>
-          </tr>
-          <tr>
-            <td>"hidden"</td>
-            <td>
-              <label for="hidden">Hidden: </label
-              ><input type="hidden" placeholder="ini type hidden" id="hidden" />
-            </td>
-            <td>
-              Biasanya, tipe ini tidak terlihat oleh user. Namun, input ini akan
-              sangat berguna bagi developer untuk memasukkan suatu data.
-            </td>
-          </tr>
-          <tr>
-            <td>Textarea</td>
-            <td>
-              <label for="hidden">Textarea: </label
-              ><textarea name="textarea" id="textarea">Ini textarea</textarea>
-            </td>
-            <td>
-              Biasanya, digunakan untuk memuat komentar panjang yang terdiri
-              dari beberapa baris
-            </td>
+            <td>disabled</td>
+            <td>semua tipe</td>
+            <td>Memberikan efek tidak aktif pada elemen input.</td>
           </tr>
         </table>
       </div>
