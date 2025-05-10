@@ -2,16 +2,32 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-p {
-    font-size: 18px;
-    color: #383838;
+/* jumbotron */
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00a2c6;
+    text-align: center;
+    color: white;
 }
 
 /* nav */
+nav {
+    background-color: #007d99;
+    padding: 5px;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
 nav a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
+    color: white;
 }
 
 nav a:hover {
@@ -40,7 +56,13 @@ h3 {
     object-position: center;
 }
 
-
+/* card article */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
 
 
 /* footer */
