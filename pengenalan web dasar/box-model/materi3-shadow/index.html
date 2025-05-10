@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+
+      main {
+        width: 600px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        background-color: rgb(255, 238, 238);
+        padding: 20px;
+      }
+
+      .box {
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        box-shadow: 8px 8px 20px 3px rgba(0, 0, 255, 0.4);
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="box"></div>
+      <br />
+      <h3>Penjelasan Properti dan Value Shadow</h3>
+      <p>box-shadow: 6px 6px 5px 10px rgba(0, 0, 255, 0.5);</p>
+      <ul>
+        <li>
+          Nilai Pertama: menunjukkan seberapa jauh ke kiri atau kanan
+          (horizontal) banyangan harus ditampakkan.
+        </li>
+        <li>
+          Nilai Kedua: menunjukkan jarak ke atas atau ke bawah (vertical)
+          bayangan harus ditampakkan
+        </li>
+        <li>
+          Nilai Ketiga: (opsional) menentukan tingkat kebuaraman yang harus
+          diterapkan pada bayangan
+        </li>
+        <li>
+          Nilai Keempat: (opsional) tingkat sebaran (spread) bayangan. Semakin
+          besar nilai yang ditentukan, bayangan yang tampakan akan semakin luas
+        </li>
+        <li>Nilai Kelima: menentukan warna yang digunakan pada bayangan.</li>
+      </ul>
+    </main>
+  </body>
+</html>
