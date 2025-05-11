@@ -1,5 +1,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* jumbotron */
@@ -35,6 +37,10 @@ nav a:hover {
 }
 
 /* main */
+main {
+    padding: 20px;
+}
+
 h2,
 h3 {
     color: #00a2c6;
