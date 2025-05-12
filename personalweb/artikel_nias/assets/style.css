@@ -39,9 +39,15 @@ h3 {
     color: white;
 }
 
+header {
+    display: inline;
+}
+
 nav {
     background-color: var(--accentColor);
     padding: 20px;
+    position: sticky;
+    top: 0;
 }
 
 nav li {
