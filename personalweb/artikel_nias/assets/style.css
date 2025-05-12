@@ -1,7 +1,9 @@
 :root {
     --mainColor: rgb(238, 24, 0);
+    --accentColor: rgb(175, 18, 0);
     --secondColor: rgb(255, 217, 0);
     --thirdColor: black;
+    --accentThirdColor: rgb(39, 39, 39);
     --onPrimary: rgb(255, 241, 204);
 }
 
@@ -14,6 +16,7 @@
 body {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     background-color: var(--thirdColor);
+    color: white;
 }
 
 h2,
@@ -30,10 +33,15 @@ h3 {
     color: white;
 }
 
+nav {
+    background-color: var(--accentColor);
+    padding: 20px;
+}
+
 nav li {
     display: inline;
     list-style-type: none;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav a {
@@ -61,10 +69,11 @@ main {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 4px 8px 0 rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
+    background-color: var(--accentThirdColor);
 }
 
 /* footer */
