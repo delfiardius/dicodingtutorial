@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+p {
+    padding-bottom: 10px;
+}
+
 body {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     background-color: var(--onPrimaryColor);
@@ -74,11 +78,12 @@ main {
     max-height: 500px;
     object-fit: cover;
     object-position: center;
+    border-radius: 4px;
 }
 
 .card {
     box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 20px;
     margin-top: 20px;
     background-color: var(--onPrimaryColor);
@@ -90,6 +95,18 @@ aside {
     padding-left: 20px;
 }
 
+.foto-penulis {
+    width: 120px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+figure img {
+    width: 120px;
+    overflow: hidden;
+}
+
 /* footer */
 footer {
     padding: 20px;
@@ -97,4 +114,26 @@ footer {
     background-color: var(--mainColor);
     text-align: center;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .note,
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
 }
