@@ -113,6 +113,30 @@ figure img {
     overflow: hidden;
 }
 
+/* table */
+table,
+th,
+td {
+    border: 1px solid var(--accentThirdColor);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: var(--secondColor)
+}
+
+tr:nth-child(even) {
+    background-color: rgb(252, 242, 185);
+}
+
 /* footer */
 footer {
     padding: 20px;
