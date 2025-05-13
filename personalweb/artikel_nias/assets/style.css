@@ -137,6 +137,14 @@ tr:nth-child(even) {
     background-color: rgb(252, 242, 185);
 }
 
+.adat {
+    margin-left: 20px;
+}
+
+.adat span {
+    font-weight: bold;
+}
+
 /* footer */
 footer {
     padding: 20px;
