@@ -60,6 +60,33 @@ main {
     width: 75%;
 }
 
+.artikel {
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.artikel h2 {
+    margin-bottom: 10px;
+}
+
+.artikel button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    background-color: #1f78ff;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 4px 4px 8px 0px rgba(0, 56, 161, 0.5);
+    cursor: pointer;
+}
+
+.artikel button:hover {
+    background-color: #0041a1;
+}
+
 aside {
     float: right;
     width: 25%;
@@ -83,7 +110,7 @@ figure {
     margin-top: 16px;
 }
 
-figure .image{
+figure .image {
     width: 120px;
     height: 120px;
     overflow: hidden;
