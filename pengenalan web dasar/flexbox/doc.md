@@ -32,3 +32,4 @@ Flex items asalnya disejajarkan secara horizontal, yaitu dimulai dari main-start
 display : flex;
 
 # Flex Direction
+# Flex Wrap
