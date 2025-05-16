@@ -26,3 +26,9 @@ Flex items asalnya disejajarkan secara horizontal, yaitu dimulai dari main-start
 - Cross axis: sumbu yang arahnya tegak lurus dengan main axis. Biasanya ini terjadi ketika flexbox menerapkan value wrap pada properti FLEX-WRAP sehingga susunan layout terlihat dua dimensi.
 - Cross-start | cross-end : flex item yang memenuhi ruang kosong flex container secara vertical, mulai dari cross-start hingga cross end. Hal ini dapat kita atur menggunakakn properti ALIGN-ITEMS, ALIGN-SELF, dan ALIGN-CONTENT.
 - Cross size: lebar atau tinggi dari sebuah flex item yang ditempatkan pada dimensi cross.
+
+# Display
+
+display : flex;
+
+# Flex Direction
