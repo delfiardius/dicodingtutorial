@@ -109,10 +109,16 @@ Sering kali kita ingin memberikan jarak atau celah pada flex items. Biasanya kit
 
 Secara asalnya, flex items akan diletakkan sesuai dengan urutan penulisan kode. Namun, dengan properti order, kita bisa mengatur urutan susunan flex items.
 
-# Flex Grow
+## Flex Grow
 
 Ketika kita membuat layout dengan flexbox, flex item akan dijajarkan serta memiliki lebar sesuai dengan ukuran kontennya. Bisa saja flex container akan meninggalkan sisa ruang meski ukuran konten dari flex items tidak memenuhi flex container.
 
 Jika Anda tidak nyaman dengan layout seperti ini, kita dapat mengatur flex items agar selalu memenuhi flex container. Di sinilah peran properti FLEX-GROW. Properti ini akan melakukan grow pada main axis sehingga tidak akan menyisakan ruang kosong pada flex container.
 
 Flex grow akan melakukan pendistribusian sisa ruang dalam container kepada seluruh child element dengan porsi yang sama (adil). Jika salah satu child element memiliki flex grow dengan nilai dua, child element tersebut akan mendapatkan pembagian porsi dua kali lebih besar dibanding child element yang hanya memiliki satu porsi. Nilai yang diberikan pada properti ini adalah angka tanpa satuan (unitless).
+
+## Flex Shrink
+
+Properti ini memiliki kemampuan untuk menyusutkan atau menciutkan ukuran child element jika ukurannya tidak mencukupi ruang container. Nilai yang diberikan pada properti ini adalah angka tanpa satuan (unitless).
+
+Secara default, nilai dari properti ini adalah 1. Jika kita memberikan nilai 0, ukuran child element tidak akan menciut.

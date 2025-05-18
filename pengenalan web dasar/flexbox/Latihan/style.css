@@ -109,3 +109,17 @@ main .flex,
     order: 4;
     flex-grow: 3.5;
 }
+
+[class^=shrink] {
+    display: flex;
+}
+
+.shrink-1 .boxshrink {
+    background-color: saddlebrown;
+    flex-shrink: 1;
+}
+
+.shrink-0 .boxshrink {
+    background-color: lime;
+    flex-shrink: 0;
+}
