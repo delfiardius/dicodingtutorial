@@ -39,6 +39,10 @@ main .flex {
     padding: 10px;
 }
 
+.box:nth-child(1) {
+    font-size: 46px;
+}
+
 .box:nth-child(odd) {
     background-color: salmon;
 }

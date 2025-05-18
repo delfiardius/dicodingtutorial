@@ -82,3 +82,19 @@ Berikut adalah penjelasan setiap value dari properti ALIGN-ITEMS
 - Flex-end: setiap child element akan memiliki ukuran height sesuai dengan isi kontent serta seluruhnya berada di tepi cross-end.
 - Center: setiap child element memiliki ukuran height sesuai dengan isi konten dan secara vertikal posisi element berada di tengah.
 - Baseline: nilai pada asalnya akan menyerupai flex-start. Namun, jika konten pertama pada masing-masing child element memiliki ukuran height yang berbeda, child element lainnya akan menyesuaikan posisinya secara cross axis dari cross-start.
+
+## Align Content
+
+Properti ini melakukan perataan terhadap flex items pada setiap baris dalam cross-axis. Tingkah laku properti ini hampir mirip dengan properti JUSTIFY-CONTENT yang mengatur tata letak flex items di sisi main axis.
+
+Hal yang perlu diperhatikan adalah penggunaan properti ini hanya akan berpengaruh pada multi line flex container dan properti FLEX-WRAP dilibatkan. Flex container yang hanya memiliki single line tidak akan memiliki efek diterapkannya properti algin content.
+
+Berikut adalah penjelasan setiap value dari properti ini.
+
+- Normal (default): Jika kita tidak menerapkan value pada align content, flex items akan diposisikan secara default.
+- Flex-start: flex items ditata pada permulaan flex container.
+- Flex-end: flex items ditata pada akhir flex container.
+- Center: flex items diposisikan di tengah flex container.
+- Space-between: flex items akan disebar secara merata, item pertama akan diposisikan pada cross-start dan item terakhir akan disposisikan pada cross-end.
+- Space-around: flex items akakn disebar secara merata dengan jarak celah yang sama juga.
+- Space-evenly: flex items akan disebar secara merata dengan jarak yang merata juga.
