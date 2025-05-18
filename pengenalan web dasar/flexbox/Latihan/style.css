@@ -13,24 +13,30 @@ main .flex {
 
     /* default value flex-wrap adalah no-wrap */
     /* flex-wrap: nowrap; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* flex-wrap: wrap-reverse; */
 
     /* justify-content */
     /* justify-content: flex-start; */
     /* justify-content: flex-end; */
-    justify-content: center;
+    /* justify-content: center; */
     /* justify-content: space-between; */
     /* justify-content: space-around; */
     /* justify-content: space-evenly; */
 
-
+    /* align-items */
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    align-items: baseline;
 }
 
 .box {
-    width: 200px;
-    height: 100px;
+    /* width: 200px; */
+    /* height: 100px; */
     margin-bottom: px;
+    padding: 10px;
 }
 
 .box:nth-child(odd) {
