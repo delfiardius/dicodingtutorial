@@ -46,4 +46,11 @@ Berikut adalah penjelasan value dari properti FLEX-DIRECTION
 - Column: flex items akan disusun secara vertikal dari atas ke bawah.
 - Column-reverse: flex items akan disusun secara vertikal, tetapi dengan arah terbalik (bawah ke atas).
 
-# Flex Wrap
+## Flex Wrap
+
+Pada mulanya, ketika layout dari parent element disusun menggunakan flexbox, flex items akan selau diletakkan dalam satu baris (satu dimensi). Dengan properti FLEX-WRAP, kita bisa mengubah perilakunya menjadi dua dimensi (jika dibutuhkan). Secara bawaan, value dari properti ini adalah NOWRAP.
+
+Berikut adalah penjelasan setiap value dari propertit FLEX-WRAP.
+- nowrap: seluruh flex items hanya akan ditempatkan dalam satu baris meskipun sangat banyak jumlahnya.
+- wrap: nilai ini menyebabkan flex items akan diletakkan ke baris yang baru (berikutnya) sehingga menjadi multiple lines.
+- wrap-reverse: meskipun mirip dengan wrap, nilai ini akan menyebabkan beberapa flex items ditempatkan dengan menambahkan baris sebelumnya.
