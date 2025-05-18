@@ -157,3 +157,34 @@ main .flex,
 .boxbasis.basis3 {
     flex-basis: 100px;
 }
+
+.flex5 {
+    margin-top: 20px;
+    background-color: antiquewhite;
+    padding: 20px;
+    display: flex;
+    width: 300px;
+    height: 100px;
+    align-items: center;
+    gap: 8px;
+}
+
+[class^=boxalignself] {
+    flex-basis: 100px;
+}
+
+.boxalignself:nth-child(odd) {
+    background-color: salmon;
+}
+
+.boxalignself:nth-child(even) {
+    background-color: lime;
+}
+
+.boxalignself1 {
+    align-self: flex-end;
+}
+
+.boxalignself3 {
+    align-self: flex-start;
+}

@@ -126,3 +126,7 @@ Secara default, nilai dari properti ini adalah 1. Jika kita memberikan nilai 0, 
 ## Flex Basis
 
 Properti ini akan memberikan ukuran default sebelum sisa ruang container didistribusikan kepada flex items. Nilai yang didukung untuk properti ini terkait ukuran dimensi (width dan height), yaitu 2rem, 20%, dan lainnya.
+
+## Align Self
+
+Properti ini memiliki tingkah laku yang sama dengan properti align items. Properti ini dapat mengatur posisi child element secara cross-axis. Namun, properti ini hanya berlaku untuk child element. Jika kita ingin mengecualikan child element di antara child element lainnya, gunakanlah properti ini.
