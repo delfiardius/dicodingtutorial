@@ -35,6 +35,15 @@ Properti-properti berikut akan berpengaruh secara langsung kepada flex items dal
 
 Jika kita ingin mendefinisikan elemen agar disusun sebagai flexible box, kita dapat menggunakan properti " display : flex; "
 
-# Flex Direction
+## Flex Direction
+
+Pada dasarnya, flexbox mengatur elemen secara satu dimensi (terlepas dari permasalahan wrapping). Dengan begitu, untuk menentukan arah susunan flex items, kita bisa definisikan menggunakan properti " flex-direction ". Secara default, value ini adalah row.
+
+Berikut adalah penjelasan value dari properti FLEX-DIRECTION
+
+- Row: flex items akan disusun secara horizontal dari kiri ke kanan.
+- Row-reverse: flex items akan disusun secara horizontal, tetapi arah terbalik (kanan ke kiri).
+- Column: flex items akan disusun secara vertikal dari atas ke bawah.
+- Column-reverse: flex items akan disusun secara vertikal, tetapi dengan arah terbalik (bawah ke atas).
 
 # Flex Wrap
