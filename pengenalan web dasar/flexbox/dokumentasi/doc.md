@@ -70,3 +70,15 @@ Berikut adalah penjelasan setiap value dari properti JUSTIFY-CONTENT.
 - Space-between: child element akan tersusun secara merata, element pertama berada di tepi main-start dan elemen kedua berada di tepi main-end. JIka child element lebih dari dua, elemen lainnya akan didistribusikan berada ditengah dengan jarak yang sama.
 - Space-around: setiap child element akan memiliki panjang celah yang smaa pada sisi horizontal.
 - Space-evenly: setiap child element akan memiliki jarak yang setara, termasuk jarak ke tepi main-start dan main-end.
+
+## Align Items
+
+Properti ini memeiliki perilaku menempatkan flex items sepanjang cross axis. Bayangkan bahwa tingkah laku dari properti ini mirip dengan property JUSTIFY-CONTENT, tetapi mengatur child element dalam satu baris pada cross axis.
+
+Berikut adalah penjelasan setiap value dari properti ALIGN-ITEMS
+
+- Stretch: melebar hingga memenuhi container dalam cross axis. Setiap child element akan memiliki nilai height yang sama, meskipun isi kontent berbeda.
+- Flex=start: setiap child element akan memiliki ukuran height sesuai dengan isi kontent serta seluruhnya akan berada di tepi cross-start.
+- Flex-end: setiap child element akan memiliki ukuran height sesuai dengan isi kontent serta seluruhnya berada di tepi cross-end.
+- Center: setiap child element memiliki ukuran height sesuai dengan isi konten dan secara vertikal posisi element berada di tengah.
+- Baseline: nilai pada asalnya akan menyerupai flex-start. Namun, jika konten pertama pada masing-masing child element memiliki ukuran height yang berbeda, child element lainnya akan menyesuaikan posisinya secara cross axis dari cross-start.
