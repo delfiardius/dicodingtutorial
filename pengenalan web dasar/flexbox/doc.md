@@ -20,16 +20,21 @@ Flex container memperluas flex items untuk mengisi ruang kosong atau menciutkann
 
 Flex items asalnya disejajarkan secara horizontal, yaitu dimulai dari main-start ke main-end (main axis).
 
-- Main axis: main axis dari flex containerr adalah arah sumbu utama untuk flex item dijajarkan atau ditata. Perlu diingat, arah dari main axis tidak selalu horizontal. Hal ini bergantung terhadap value dari properti flex-direction.
+- Main axis: main axis dari flex container adalah arah sumbu utama untuk flex item dijajarkan atau ditata. Perlu diingat, arah dari main axis tidak selalu horizontal. Hal ini bergantung terhadap value dari properti flex-direction.
 - Main-start | Main-end : flex itema akan ditempatkan dalam flex container yang berawal dari main-start dan main-end.
 - Main size: lebar atau tinggi dari flex item yang diposisikan pada sumbu utama (main axis).
 - Cross axis: sumbu yang arahnya tegak lurus dengan main axis. Biasanya ini terjadi ketika flexbox menerapkan value wrap pada properti FLEX-WRAP sehingga susunan layout terlihat dua dimensi.
 - Cross-start | cross-end : flex item yang memenuhi ruang kosong flex container secara vertical, mulai dari cross-start hingga cross end. Hal ini dapat kita atur menggunakakn properti ALIGN-ITEMS, ALIGN-SELF, dan ALIGN-CONTENT.
 - Cross size: lebar atau tinggi dari sebuah flex item yang ditempatkan pada dimensi cross.
 
-# Display
+# Properti-properti pada Flex Container
 
-display : flex;
+Properti-properti berikut akan berpengaruh secara langsung kepada flex items dalam menampilkan susunannya.
+
+## Display
+
+Jika kita ingin mendefinisikan elemen agar disusun sebagai flexible box, kita dapat menggunakan properti " display : flex; "
 
 # Flex Direction
+
 # Flex Wrap
