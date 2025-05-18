@@ -98,3 +98,8 @@ Berikut adalah penjelasan setiap value dari properti ini.
 - Space-between: flex items akan disebar secara merata, item pertama akan diposisikan pada cross-start dan item terakhir akan disposisikan pada cross-end.
 - Space-around: flex items akakn disebar secara merata dengan jarak celah yang sama juga.
 - Space-evenly: flex items akan disebar secara merata dengan jarak yang merata juga.
+
+## Gap
+
+Sering kali kita ingin memberikan jarak atau celah pada flex items. Biasanya kita akan mengandalkan properti MARGIN dalam hal ini. Namun, ada cara yang lebih efektif, yaitu menggunakan properti GAP.
+
