@@ -1,4 +1,5 @@
-main .flex {
+main .flex,
+.flex2 {
     background-color: lightgray;
     height: 50vh;
 }
@@ -60,4 +61,46 @@ main .flex {
 
 .box:nth-child(even) {
     background-color: lime;
+}
+
+.flex2 {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+}
+
+.box2 {
+    padding: 10px;
+}
+
+.box2:nth-child(odd) {
+    background-color: salmon;
+}
+
+.box2:nth-child(even) {
+    background-color: lime;
+}
+
+.satu {
+    order: 1;
+}
+
+.dua {
+    order: 0;
+}
+
+.tiga {
+    order: -1;
+}
+
+.empat {
+    order: 5;
+}
+
+.lima {
+    order: 4;
 }

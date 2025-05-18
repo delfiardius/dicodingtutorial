@@ -103,3 +103,8 @@ Berikut adalah penjelasan setiap value dari properti ini.
 
 Sering kali kita ingin memberikan jarak atau celah pada flex items. Biasanya kita akan mengandalkan properti MARGIN dalam hal ini. Namun, ada cara yang lebih efektif, yaitu menggunakan properti GAP.
 
+# Properti-properti pada Flex Items
+
+## Order
+
+Secara asalnya, flex items akan diletakkan sesuai dengan urutan penulisan kode. Namun, dengan properti order, kita bisa mengatur urutan susunan flex items.
