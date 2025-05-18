@@ -5,9 +5,30 @@ main .flex {
 
 .flex {
     display: flex;
+    /* default value flex-direction adalah row, boleh tidak dituliskan */
     /* flex-direction: row; */
-    /* default value adalah row, boleh tidak dituliskan */
     /* flex-direction: row-reverse;  */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* flex-direction: column-reverse; */
+
+    /* default value flex-wrap adalah no-wrap */
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+
+
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    margin-bottom: px;
+}
+
+.box:nth-child(odd) {
+    background-color: salmon;
+}
+
+.box:nth-child(even) {
+    background-color: lime;
 }
