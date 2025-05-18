@@ -122,3 +122,7 @@ Flex grow akan melakukan pendistribusian sisa ruang dalam container kepada selur
 Properti ini memiliki kemampuan untuk menyusutkan atau menciutkan ukuran child element jika ukurannya tidak mencukupi ruang container. Nilai yang diberikan pada properti ini adalah angka tanpa satuan (unitless).
 
 Secara default, nilai dari properti ini adalah 1. Jika kita memberikan nilai 0, ukuran child element tidak akan menciut.
+
+## Flex Basis
+
+Properti ini akan memberikan ukuran default sebelum sisa ruang container didistribusikan kepada flex items. Nilai yang didukung untuk properti ini terkait ukuran dimensi (width dan height), yaitu 2rem, 20%, dan lainnya.
