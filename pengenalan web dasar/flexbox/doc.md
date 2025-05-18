@@ -51,6 +51,22 @@ Berikut adalah penjelasan value dari properti FLEX-DIRECTION
 Pada mulanya, ketika layout dari parent element disusun menggunakan flexbox, flex items akan selau diletakkan dalam satu baris (satu dimensi). Dengan properti FLEX-WRAP, kita bisa mengubah perilakunya menjadi dua dimensi (jika dibutuhkan). Secara bawaan, value dari properti ini adalah NOWRAP.
 
 Berikut adalah penjelasan setiap value dari propertit FLEX-WRAP.
+
 - nowrap: seluruh flex items hanya akan ditempatkan dalam satu baris meskipun sangat banyak jumlahnya.
 - wrap: nilai ini menyebabkan flex items akan diletakkan ke baris yang baru (berikutnya) sehingga menjadi multiple lines.
 - wrap-reverse: meskipun mirip dengan wrap, nilai ini akan menyebabkan beberapa flex items ditempatkan dengan menambahkan baris sebelumnya.
+
+## Justify Content
+
+Ada kasus saat kita perlu meletakkan child element agar berada di tengah secara HORIZONTAL, jarak child element setara, dsb. Sebelum kita mengenal flexboxk, untuk mencapai hal tersebut diperlukan penentuan nilai secara eksplisit, misalnya dengan properti margin agar jarak antar elemen sesuai dengan keinginan. Tentu saja hal ini menjadi rumit dan membuat kita frustasi.
+
+Pada flexbox, permasalahan tersebut terselesaikan dengan mudah menggunakan properti JUSTIFY-CONTENT. Properti ini akan mengatur posisi child elemen pada main axis. Kemudahan ini tentu akan sangat dirasakan ketika membuat tampilan yang responsif.
+
+Berikut adalah penjelasan setiap value dari properti JUSTIFY-CONTENT.
+
+- Flex-start: peletakkan child element akan dimulai dari main-starat.
+- Flex-end: peletakkan child element dimulai dari main-end.
+- Center: child element akan diletakkan di tengah parent child.
+- Space-between: child element akan tersusun secara merata, element pertama berada di tepi main-start dan elemen kedua berada di tepi main-end. JIka child element lebih dari dua, elemen lainnya akan didistribusikan berada ditengah dengan jarak yang sama.
+- Space-around: setiap child element akan memiliki panjang celah yang smaa pada sisi horizontal.
+- Space-evenly: setiap child element akan memiliki jarak yang setara, termasuk jarak ke tepi main-start dan main-end.
