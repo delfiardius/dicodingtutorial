@@ -126,3 +126,26 @@ footer {
     background-color: var(--thirdColor);
     padding: 1.5rem;
 }
+
+/* media queries */
+
+/* Laptop */
+@media screen and (max-width: 1366px) {
+    html{
+        font-size: 75%;
+    }
+}
+
+/* Table */
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 55%;
+    }
+}
