@@ -1,0 +1,81 @@
+:root {
+    --primaryColor: #0118D8;
+    --secondColor: #0118D8;
+    --thirdColor: #E9DFC3;
+    --onPrimary: #FFF8F8;
+    --logoColor: rgb(255, 45, 21);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--onPrimary);
+}
+
+/* header */
+header {
+    background-color: var(--thirdColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    border-bottom: 1px solid var(--logoColor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* navbar logo */
+.logo .navbar-logo {
+    color: var(--logoColor);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo .navbar-logo span {
+    font-style: italic;
+    color: var(--secondColor);
+    font-size: 1.5rem;
+}
+
+/* navbar list*/
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--secondColor);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* extra */
+.extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hireme-btn {
+    background-color: var(--logoColor);
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+#hamburger-menu {
+    display: none;
+}
