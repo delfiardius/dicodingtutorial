@@ -61,6 +61,23 @@ nav a {
     font-size: 1.1rem;
 }
 
+nav a:hover {
+    /* border-bottom: 1px solid var(--secondColor); */
+    color: #3d51ff;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid var(--secondColor);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+nav a:hover::after{
+    transform: scaleX(0.5);
+}
 /* extra */
 .extra {
     display: flex;
