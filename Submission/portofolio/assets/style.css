@@ -18,6 +18,9 @@
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--onPrimary);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /* header */
@@ -98,7 +101,7 @@ nav a:hover::after {
     display: none;
 }
 
-.hireme-btn {
+.cta-btn {
     background-color: var(--logoColor);
     padding: 10px 20px;
     color: white;
@@ -108,7 +111,7 @@ nav a:hover::after {
     transition: .2s;
 }
 
-.hireme-btn:hover {
+.cta-btn:hover {
     border: 2px solid var(--logoColor);
     background-color: white;
     color: var(--logoColor);
@@ -123,10 +126,28 @@ main {
     display: flex;
     height: 100vh;
     padding: 1.4rem 7%;
+    gap: 2rem;
+    justify-content: space-between;
 }
 
-.content {
-    overflow: auto;
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+/* aside */
+aside {
+    flex: 1;
+    border-left: 0.1rem solid var(--logoColor);
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+aside img {
+    height: 10rem;
 }
 
 /* footer */
@@ -176,5 +197,7 @@ footer {
 
     nav {
         display: none;
-    };
+    }
+
+    ;
 }
