@@ -85,6 +85,7 @@ nav a:hover::after {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    display: none;
 }
 
 .hireme-btn {
@@ -111,7 +112,7 @@ nav a:hover::after {
 main {
     display: flex;
     height: 100vh;
-    padding: 10px;
+    padding: 1.4rem 7%;
 }
 
 .content {
@@ -134,18 +135,14 @@ footer {
 /* Laptop */
 @media screen and (max-width: 1366px) {
     html {
-        font-size: 75%;
+        font-size: 85%;
     }
 }
 
 /* Table */
 @media screen and (max-width: 768px) {
     html {
-        font-size: 62.5%;
-    }
-
-    nav {
-        display: none;
+        font-size: 75%;
     }
 
     #hamburger-menu {
@@ -156,6 +153,18 @@ footer {
 /* Mobile Phone */
 @media screen and (max-width: 450px) {
     html {
-        font-size: 55%;
+        font-size: 65%;
     }
+
+    main {
+        padding: 1rem;
+    }
+
+    .extra {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    };
 }
