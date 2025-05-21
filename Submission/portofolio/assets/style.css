@@ -102,19 +102,18 @@ nav a:hover::after {
 }
 
 .cta-btn {
-    background-color: var(--logoColor);
+    background-color: var(--secondColor);
     padding: 10px 20px;
     color: white;
     font-weight: 600;
     border-radius: 999px;
-    border: 2px solid white;
     transition: .2s;
 }
 
 .cta-btn:hover {
-    border: 2px solid var(--logoColor);
+    border: 2px solid var(--secondColor);
     background-color: white;
-    color: var(--logoColor);
+    color: var(--secondColor);
 }
 
 #hamburger-menu {
