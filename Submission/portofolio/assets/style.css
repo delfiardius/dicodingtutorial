@@ -49,6 +49,16 @@ header {
     font-size: 1.5rem;
 }
 
+.logo {
+    line-height: 0.9rem;
+}
+
+.logo .slogan {
+    font-size: 0.8rem;
+    color: var(--secondColor);
+    font-weight: 500;
+}
+
 /* navbar list*/
 nav {
     display: flex;
