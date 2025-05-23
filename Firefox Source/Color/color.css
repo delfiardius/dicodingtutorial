@@ -17,6 +17,11 @@
     --icon-color-error: #b20037;
     --icon-color-warning: #9c5200;
 
+    /* Link Color */
+    --link-color: #0062fa;
+    --link-color-hover: #0053cb;
+    --link-color-active: #0041a4;
+
 
 
     /* Dark Mode */
@@ -36,5 +41,10 @@
     --icon-color-information: #abdfff;
     --icon-color-error: #ffc3c9;
     --icon-color-warning: #ffe699;
+
+    /* Link Color */
+    --link-color: #00cadb;
+    --link-color-hover: #61dce9;
+    --link-color-active: #a6ecf4;
 
 }
