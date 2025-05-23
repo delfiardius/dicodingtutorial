@@ -11,6 +11,12 @@
     --errorColor: #ffe8ea;
     --warningColor: #fff4d0;
 
+    /* Color Icon */
+    --icon-color-success: #007700;
+    --icon-color-information: #0053cb;
+    --icon-color-error: #b20037;
+    --icon-color-warning: #9c5200;
+
 
 
     /* Dark Mode */
@@ -24,5 +30,11 @@
     --infoColor: #042356;
     --errorColor: #4c0516;
     --warningColor: #421b00;
+
+    /* Color Icon */
+    --icon-color-success: #b5f0b5;
+    --icon-color-information: #abdfff;
+    --icon-color-error: #ffc3c9;
+    --icon-color-warning: #ffe699;
 
 }
