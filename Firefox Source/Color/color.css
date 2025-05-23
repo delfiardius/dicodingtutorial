@@ -22,6 +22,12 @@
     --link-color-hover: #0053cb;
     --link-color-active: #0041a4;
 
+    /* Outline Color */
+    --outline-color-error: #b20037;
+
+    /* Focus Color */
+    --focus-outline-color: #0062fa;
+
 
 
     /* Dark Mode */
@@ -47,4 +53,9 @@
     --link-color-hover: #61dce9;
     --link-color-active: #a6ecf4;
 
+    /* Outline Color */
+    --outline-color-error: #ffa0aa;
+
+    /* Focus Color */
+    --focus-outline-color: #00cadb;
 }
