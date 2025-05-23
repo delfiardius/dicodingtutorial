@@ -1,0 +1,17 @@
+:root {
+    /* Light Mode */
+    /* Accent Primary */
+    --color-accent-primary: #0062fa;
+    --color-accent-primary-hover: #0053cb;
+    --color-accent-primary-active: #0041a4;
+
+    /*  */
+
+
+
+    /* Dark Mode */
+    /* Accent Primary */
+    --color-accent-primary-dark-mode: #00cadb;
+    --color-accent-primary-hover-dark-mode: #61dce9;
+    --color-accent-primary-active-dark-mode: #a6ecf4;
+}
