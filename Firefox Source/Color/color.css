@@ -5,7 +5,11 @@
     --color-accent-primary-hover: #0053cb;
     --color-accent-primary-active: #0041a4;
 
-    /*  */
+    /* Information Background Color*/
+    --successColor: #e1ffe1;
+    --infoColor: #e2f7ff;
+    --errorColor: #ffe8ea;
+    --warningColor: #fff4d0;
 
 
 
@@ -14,4 +18,11 @@
     --color-accent-primary-dark-mode: #00cadb;
     --color-accent-primary-hover-dark-mode: #61dce9;
     --color-accent-primary-active-dark-mode: #a6ecf4;
+
+    /* Information Background Color*/
+    --successColor: #003200;
+    --infoColor: #042356;
+    --errorColor: #4c0516;
+    --warningColor: #421b00;
+
 }
