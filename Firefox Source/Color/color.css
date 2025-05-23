@@ -28,6 +28,8 @@
     /* Focus Color */
     --focus-outline-color: #0062fa;
 
+    /* Text Color Error */
+    --text-color-error: #b20037;
 
 
     /* Dark Mode */
@@ -58,4 +60,7 @@
 
     /* Focus Color */
     --focus-outline-color: #00cadb;
+
+    /* Text Color Error */
+    --text-color-error: #ffa0aa;
 }
