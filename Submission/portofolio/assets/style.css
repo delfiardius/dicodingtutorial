@@ -60,20 +60,23 @@ header {
     font-size: 1.5rem;
 }
 
-.logo {
-    line-height: 0.9rem;
-}
-
 .logo .slogan {
     font-size: 0.8rem;
     color: var(--secondColor);
     font-weight: 500;
 }
 
+.logo {
+    flex: 1;
+}
+
 /* navbar list*/
 nav {
     display: flex;
     gap: 2rem;
+    flex: 5;
+    align-items: center;
+    justify-content: center;
 }
 
 nav a {
@@ -106,6 +109,11 @@ nav a:hover::after {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    /* display: none; */
+}
+
+.extra #hamburger-menu {
+    display: flex;
     display: none;
 }
 
@@ -126,6 +134,35 @@ nav a:hover::after {
 
 #hamburger-menu {
     display: none;
+}
+
+#search-icon {
+    display: none;
+}
+
+.search {
+    display: flex;
+    gap: 0.6rem;
+    flex: 1;
+}
+
+.search #search-field {
+    padding: 0.5rem 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--primaryColor);
+}
+
+.search button {
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: var(--primaryColor);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #3d51ff;
 }
 
 /* main */
