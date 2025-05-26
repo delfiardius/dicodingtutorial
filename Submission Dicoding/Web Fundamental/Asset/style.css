@@ -7,3 +7,11 @@
     --accentColor: #e7e7d5;
     --tertiaryColor: #9a9507;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
