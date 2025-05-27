@@ -96,7 +96,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    flex: 5;
+    flex: 7;
 }
 
 .content p {
@@ -134,12 +134,6 @@ figure img {
     object-position: center;
 }
 
-aside {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    /* background-color: blue; */
-}
 
 /* table */
 table,
@@ -159,7 +153,7 @@ td {
     padding: 0.8rem;
 }
 
-th {
+.table-ciri-khas th {
     background-color: var(--secondaryColor)
 }
 
@@ -167,8 +161,54 @@ td:first-child {
     font-weight: bold;
 }
 
-tr:hover {
+.table-ciri-khas tr:hover {
     background-color: var(--accentColor);
+}
+
+/* aside */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+aside header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accentColor);
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+aside figure {
+    margin-top: 1rem;
+}
+
+aside figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+aside table {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+aside th,
+td {
+    padding: 0.5rem;
+}
+
+aside table th{
+    text-align: left;
+}
+
+aside .head-title {
+    background-color: var(--accentColor);
+    text-align: center;
+    font-weight: bold;
 }
 
 /* footer */
