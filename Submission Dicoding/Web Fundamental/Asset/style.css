@@ -22,24 +22,26 @@ body {
 .top-bar {
     background-color: var(--secondaryColor);
     display: flex;
-    padding: 1.4rem 7%;
+    padding: 1.5rem 7%;
     top: 0;
     left: 0;
     right: 0;
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    border-bottom: 2px solid var(--primaryColor);
 }
 
 .top-bar .logo .navbar-logo {
     color: var(--fontColor);
+    font-size: 2.5rem;
 }
 
 .top-bar .logo span {
     font-size: 1.6rem;
     font-style: italic;
     color: var(--primaryColor);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .top-bar nav ul {
@@ -77,9 +79,15 @@ body {
 
 /* main */
 main {
-    padding: 1rem 7%;
+    padding: 1rem 15%;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .content {
@@ -97,11 +105,17 @@ main {
     font-size: 1.2rem;
 }
 
+.quotes {
+    width: 100%;
+    justify-content: center;
+    background-color: var(--primaryColor);
+    padding: 1rem;
+}
+
 blockquote {
     text-align: center;
-    margin: 1.5rem;
-    font-size: 1.4rem;
-    color: #000;
+    font-size: 1.5rem;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -136,4 +150,5 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    border-top: 2px solid var(--primaryColor);
 }
