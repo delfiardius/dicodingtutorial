@@ -68,7 +68,7 @@ body {
     content: '';
     display: block;
     padding-bottom: 0.1rem;
-    border-bottom: 1px solid var(--fontColor);
+    border-bottom: 2px solid var(--primaryColor);
     transform: scaleX(0);
     transition: 0.2s linear;
 }
@@ -141,6 +141,35 @@ aside {
     /* background-color: blue; */
 }
 
+/* table */
+table,
+th,
+td {
+    border: 1px solid var(--shadowColor);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th,
+td {
+    padding: 0.8rem;
+}
+
+th {
+    background-color: var(--secondaryColor)
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: var(--accentColor);
+}
 
 /* footer */
 footer {
