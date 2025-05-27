@@ -19,7 +19,7 @@ body {
 }
 
 /* header */
-header {
+.top-bar {
     background-color: var(--secondaryColor);
     display: flex;
     padding: 1.4rem 7%;
@@ -30,36 +30,36 @@ header {
     align-items: center;
 }
 
-header .logo .navbar-logo {
+.top-bar .logo .navbar-logo {
     color: var(--fontColor);
 }
 
-header .logo span {
+.top-bar .logo span {
     font-size: 1.6rem;
     font-style: italic;
     color: var(--primaryColor);
     font-weight: 500;
 }
 
-header nav ul {
+.top-bar nav ul {
     display: flex;
     gap: 1rem;
 }
 
-header nav ul li {
+.top-bar nav ul li {
     list-style-type: none;
 }
 
-header nav ul li a {
+.top-bar nav ul li a {
     text-decoration: none;
     color: var(--fontColor);
 }
 
-header nav ul li a:hover {
+.top-bar nav ul li a:hover {
     color: var(--shadowColor);
 }
 
-header nav ul li a::after {
+.top-bar nav ul li a::after {
     content: '';
     display: block;
     padding-bottom: 0.1rem;
@@ -68,13 +68,13 @@ header nav ul li a::after {
     transition: 0.2s linear;
 }
 
-header nav ul li a:hover::after {
+.top-bar nav ul li a:hover::after {
     transform: scaleX(0.5);
 }
 
 /* main */
 main {
-    padding: 1rem;
+    padding: 1rem 7%;
 }
 
 
