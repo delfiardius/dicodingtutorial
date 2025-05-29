@@ -192,8 +192,21 @@ aside figcaption {
     font-style: italic;
 }
 
-aside table {
+aside section {
     margin-top: 1rem;
+}
+
+aside .profile-img {
+    width: 40%;
+    overflow: hidden;
+}
+
+aside section p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+aside table {
     font-size: 0.8rem;
 }
 
@@ -202,7 +215,7 @@ td {
     padding: 0.5rem;
 }
 
-aside table th{
+aside table th {
     text-align: left;
 }
 
