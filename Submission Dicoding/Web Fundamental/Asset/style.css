@@ -44,6 +44,31 @@ body {
     font-weight: 600;
 }
 
+/* fitur cari */
+.fitur-cari {
+    display: flex;
+    width: 40%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="search"] {
+    position: relative;
+    width: 100%;
+    padding: 1rem 1.5rem 1rem;
+    border: 2px solid #c4c4c4;
+    border-radius: 999px;
+    color: #a3a3a3;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="search"]:focus {
+    border-color: var(--fontColor);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
 .top-bar nav ul {
     display: flex;
     gap: 1rem;
@@ -188,6 +213,10 @@ aside header {
     padding: 1rem;
     text-align: center;
     gap: 1rem;
+}
+
+aside header h2 {
+    margin: 0;
 }
 
 aside figure {
