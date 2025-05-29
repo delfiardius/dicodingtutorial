@@ -100,8 +100,6 @@ main {
 }
 
 .content p {
-    text-indent: 2rem;
-    margin: 1rem 0;
     font-size: 1.2rem;
 }
 
@@ -117,6 +115,15 @@ blockquote {
     font-size: 1.5rem;
     color: #fff;
     font-weight: 500;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 blockquote::before,
@@ -196,7 +203,7 @@ aside section {
     margin-top: 1rem;
 }
 
-aside .profile {
+aside .profile-img {
     float: left;
     margin-right: 1rem;
 }

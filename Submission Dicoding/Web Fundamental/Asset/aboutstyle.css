@@ -1,0 +1,24 @@
+.desc {
+    /* background-color: yellow; */
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.desc-img img {
+    width: 600px;
+}
+
+.desc-img figcaption {
+    font-style: italic;
+}
+
+dl {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
