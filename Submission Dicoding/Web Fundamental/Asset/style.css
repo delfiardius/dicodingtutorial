@@ -196,9 +196,13 @@ aside section {
     margin-top: 1rem;
 }
 
+aside .profile {
+    float: left;
+    margin-right: 1rem;
+}
+
 aside .profile-img {
-    width: 40%;
-    overflow: hidden;
+    width: 120px;
 }
 
 aside section p {
