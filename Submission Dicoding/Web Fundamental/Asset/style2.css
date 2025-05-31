@@ -1,0 +1,305 @@
+
+
+/* header */
+.top-bar {
+    background-color: var(--secondaryColor);
+    display: flex;
+    padding: 1.5rem 7%;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    border-bottom: 2px solid var(--primaryColor);
+}
+
+.top-bar .logo .navbar-logo {
+    color: var(--fontColor);
+    font-size: 2.5rem;
+}
+
+.top-bar .logo span {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: var(--primaryColor);
+    font-weight: 600;
+}
+
+/* fitur cari */
+.fitur-cari {
+    display: flex;
+    width: 40%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="search"] {
+    position: relative;
+    width: 100%;
+    padding: 1rem 1.5rem 1rem;
+    border: 2px solid #c4c4c4;
+    border-radius: 999px;
+    color: #a3a3a3;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="search"]:focus {
+    border-color: var(--fontColor);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.top-bar nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.top-bar nav ul li {
+    list-style-type: none;
+}
+
+.top-bar nav ul li a {
+    text-decoration: none;
+    color: var(--fontColor);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.top-bar nav ul li a:hover {
+    color: var(--shadowColor);
+}
+
+.top-bar nav ul li a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 2px solid var(--primaryColor);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.top-bar nav ul li a:hover::after {
+    transform: scaleX(0.5);
+}
+
+/* main */
+main {
+    padding: 1rem 15%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .content {
+    /* background-color: red; */
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 7;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.quotes {
+    width: 100%;
+    justify-content: center;
+    background-color: var(--primaryColor);
+    padding: 1rem;
+}
+
+blockquote {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+blockquote::before,
+blockquote::after {
+    content: '"';
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+figure img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* table */
+table,
+th,
+td {
+    border: 1px solid var(--shadowColor);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th,
+td {
+    padding: 0.8rem;
+}
+
+.table-ciri-khas th {
+    background-color: var(--secondaryColor)
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+.table-ciri-khas tr:hover {
+    background-color: var(--accentColor);
+}
+
+/* aside */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    gap: 1rem;
+}
+
+aside header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accentColor);
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+aside header h2 {
+    margin: 0;
+}
+
+aside figure {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+aside figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+aside section {
+    margin-top: 1rem;
+}
+
+aside .profile-img {
+    width: 120px;
+    float: left;
+    margin-right: 1rem;
+}
+
+aside section p {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+aside table {
+    font-size: 0.8rem;
+}
+
+aside th,
+td {
+    padding: 0.5rem;
+}
+
+aside table th {
+    text-align: left;
+}
+
+aside .head-title {
+    background-color: var(--accentColor);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* fitur extra */
+.fitur-extra input,
+#box-komen {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--fontColor);
+}
+
+.fitur-extra form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#box-komen {
+    width: 100%;
+    height: 200px;
+    transition: border-color 0.3s;
+}
+
+/* #box-komen:hover {
+    border: 2px solid var(--primaryColor);
+}
+
+#box-komen:focus {
+    border: 2px solid var(--primaryColor);
+    outline: none;
+} */
+
+.info-komentator {
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+    gap: 1rem;
+}
+
+.info-komentator input {
+    flex: 1;
+}
+
+.fitur-extra button {
+    padding: 0.7rem;
+    width: 120px;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-top: 2px solid var(--primaryColor);
+}
