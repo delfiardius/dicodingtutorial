@@ -1,0 +1,208 @@
+.list-artikel-page {
+    display: flex;
+    margin: 0 20%;
+    padding-top: 1rem;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.wrap-artikel {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border-bottom: 1px solid red;
+    padding-bottom: 1rem;
+}
+
+figure img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+figure figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.deskripsi {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.7rem;
+    width: 120px;
+    cursor: pointer;
+}
+
+/* media queries */
+
+/* Laptop Besar */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 95%;
+    }
+
+    .list-artikel-page {
+        margin: 0 10%;
+    }
+
+    .main-title {
+        line-height: 3.5rem;
+    }
+
+    figure img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    button {
+        padding: 0.7rem;
+        width: 120px;
+        cursor: pointer;
+    }
+}
+
+/* Laptop Kecil/Tablet Landscape */
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 90%;
+    }
+
+    /* search */
+    input[type="search"] {
+        width: 300px;
+    }
+
+    .list-artikel-page {
+        margin: 0 5%;
+    }
+
+    .main-title {
+        line-height: 3.5rem;
+    }
+
+    figure img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+
+/* Tablet*/
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+
+    /* search */
+    input[type="search"] {
+        width: 100%;
+    }
+
+    .list-artikel-page {
+        margin: 0 5%;
+    }
+
+    .main-title {
+        line-height: 3.5rem;
+    }
+
+    figure img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+}
+
+/* Smartphone besar/sedang*/
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 80%;
+    }
+
+    /* search */
+    input[type="search"] {
+        display: none;
+    }
+
+    .list-artikel-page {
+        margin: 0 5%;
+    }
+
+    .main-title {
+        line-height: 3.5rem;
+    }
+
+    .wrap-artikel {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-bottom: 1px solid red;
+        padding-bottom: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    button {
+        padding: 0.7rem;
+        width: 120px;
+        cursor: pointer;
+    }
+}
+
+/* Small Smartphone*/
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 70%;
+    }
+
+    /* search */
+    input[type="search"] {
+        display: none;
+    }
+
+        .list-artikel-page {
+        margin: 0 5%;
+    }
+
+    .main-title {
+        line-height: 3.5rem;
+    }
+
+    .wrap-artikel {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-bottom: 1px solid red;
+        padding-bottom: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    button {
+        padding: 0.7rem;
+        width: 100%;
+        cursor: pointer;
+    }
+
+}

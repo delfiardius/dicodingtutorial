@@ -1,0 +1,91 @@
+/* Style for about */
+
+.about-page {
+    display: flex;
+    margin: 0 20%;
+    padding-top: 1rem;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.desc-about img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    border: 1px solid var(--shadowColor);
+}
+
+
+dl {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.detail-kategori {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-kategori ul li {
+    font-size: 1.2rem;
+    list-style-position: inside;
+}
+
+/* media queries */
+
+/* Laptop Besar */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 95%;
+    }
+
+    .about-page {
+        margin: 0 10%;
+    }
+
+    .main-title {
+        line-height: 3.5rem;
+    }
+}
+
+
+/* Tablet*/
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+
+    .about-page {
+        margin: 0 5%;
+    }
+}
+
+/* Smartphone besar/sedang*/
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 85%;
+    }
+
+    .about-page {
+        margin: 0 5%;
+    }
+}
+
+/* Small Smartphone*/
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 75%;
+    }
+
+    .about-page {
+        margin: 0 5%;
+    }
+}
