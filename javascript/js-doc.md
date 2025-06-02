@@ -34,3 +34,28 @@ JavaScript sudah sangat marak digunakan dalam pengembangan aplikasi web. Bagi de
 Namun, masalahnya adalah website agak statis. Tidak ada perubahan apa pun yang terjadi secara dinamis, baik dari sisi konten maupun styling. Misalnya, developer web ingin adanya interaktivitas elemen, perubahan styling, memiliki kendali terhadap struktur halaman, meminta data ke server, dll. Semua ini dilakukan hanya dengan JavaScript. Website menjadi lebih interaktif dan dinamis atas datangnya JavaScript.
 
 Pesatnya perkembangan teknologi menuntun JavaScript berkembang. Saat ini, JavaScript sudah merambah berbagai platform. Selain aplikasi browser, banyak juga aplikasi server, desktop, dan lainnya yang dapat dibangun dengan JavaScript. Ini tercapai berkat runtime JavaScript, seperti Node.js dan Bun. Bahkan, beberapa database management system (DBMS), salah satunya MongoDB, juga menggunakan JavaScript sebagai bahasa scripting dan kuerinya.
+
+## JavaScript Runtime Environment
+
+Runtime environment adalah tempat sebuah program akan dieksekusi. Ia akan menentukan global object yang dapat diakses oleh program JavaScript. Lalu, apa yang dimaksud dengan global object? Nah, kita akan memahaminya ketika mempelajari masing-masing runtime environment.
+
+Ada tiga macam yang akan kita bahas dalam materi ini, yaitu Browser, Node.js, dan Bun.
+
+### Browser
+
+Kebanyakan program JavaScript dijalankan melalui lingkungan browser untuk membuat aplikasi browser interaktif dan dapat menampilkan data yang dinamis. Program JavaScript yang dijalankan dalam lingkungan browser memiliki akses terhadap global object window. Selain menampilkan alert saja, ia juga memberikan akses developer untuk memanipulasi seluruh konten yang tampil di browser. Caranya adalah mengakses properti window.document. Program apa pun yang dijalankan dalam runtime ini dapat mengakses objek tersebut.
+
+Program yang dibuat dan dieksekusi di lingkungan browser biasanya dikenal dengan aplikasi front-end atau aplikasi client. Jika ingin menjalankan program JavaScript dalam sistem komputer atau membangun aplikasi back-end, kita memerlukan runtime environment lain, seperti Node.js dan Bun.
+
+1. External JavaScript
+   Kode program dalam cara ini ditulis secara terpisah dari berkas HTML. Berkas JavaScript ditulis dengan berkas berekstensi “js”. Pemisahan ini membuat program JavaScript tidak lagi terhubung dengan HTML. Oleh karena itu, kita gunakan 'script' untuk mengimpornya.
+
+2. REPL versi Browser
+   Cara ketiga adalah menjalankannya secara langsung melalui browser atau REPL. Read-Eval-Print-Loop atau disingkat REPL dimiliki juga oleh browser. Caranya sangatlah mudah.
+   Buka browser kesukaan Anda dan Developer Tools di dalamnya. Developer Tools adalah fitur browser untuk mendukung proses pengembangan aplikasi web. Salah satu fitur yang dimiliki adalah REPL. Ini dapat kita akses dengan membuka tab Console dan mulai menuliskan kode JavaScript.
+
+Program yang dibuat dan dieksekusi di lingkungan browser biasanya dikenal dengan aplikasi front-end atau aplikasi client. Jika ingin menjalankan program JavaScript dalam sistem komputer atau membangun aplikasi back-end, kita memerlukan runtime environment lain, seperti Node.js dan Bun.
+
+### Node.js
+
+### Bun
