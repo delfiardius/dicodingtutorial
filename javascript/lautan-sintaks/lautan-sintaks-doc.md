@@ -25,3 +25,26 @@ Selain statement, ada istilah lain yang penting untuk diketahui, yaitu expressio
 Expression dapat berupa hal-hal yang menghasilkan nilai, tidak hanya nilai statis, seperti angka 10 atau teks “Dicoding”. Namun, hasil operasi matematika seperti 4 + 4 yang akan menghasilkan nilai 8 atau penggabungan teks seperti “Dicoding” + “ “ + “Indonesia” yang akan menghasilkan teks “Dicoding Indonesia” juga merupakan sebuah expression.
 
 Memahami istilah-istilah ini dalam struktur kode JavaScript sangatlah penting, baik dalam proses pembelajaran maupun pengembangan aplikasi nyata. Salah satu manfaat utamanya adalah ketika Anda menghadapi pesan error dari interpreter JavaScript yang sering menggunakan istilah statement atau expression dalam pesan error-nya.
+
+## Komentar
+
+Komentar adalah teks bersifat penjelasan yang dapat dibaca oleh programmer dan ditulis dalam berkas kode. Pada JavaScript, untuk menuliskan teks komentar, ada dua cara, yaitu menggunakan tanda // dan /\* \*/. Teks yang ditulis dengan tanda tersebut dianggap bukan instruksi dan tidak akan dijalankan oleh interpreter.
+
+## Variabel
+
+Variabel adalah wadah untuk menampung sebuah nilai. Nilai yang ditampung dapat berupa angka, teks, atau apa pun yang menghasilkan nilai (expression). Pada JavaScript, kita bisa membuat variabel melalui dua cara, yakni dengan sintaksis const dan let.
+
+Perbedaan dari variabel yang dibuat dengan const dan let adalah variabel yang dibuat dengan const tidak dapat diinisialisasi ulang (sederhananya, diubah) nilainya, sedangkan jika variabel dibuat dengan let, kita bisa menginisialisasi ulang nilainya.
+
+Namun, ketika Anda membuat variabel dengan const, nilai yang ditetapkan ketika variabel dibuat, tidak bisa diubah. Jika Anda coba untuk mengubahnya, program akan terhenti dan menghasilkan error.
+
+Variabel yang dibuat dengan const juga umum disebut sebagai constant (konstan) karena dalam matematika istilah tersebut memiliki arti tetap atau tidak berubah-ubah.
+
+### Aturan Penamaan Variabel
+
+1. Tidak Boleh Memberikan Nama yang Sama dalam Cakupan yang Sama
+   Nama variabel haruslah unik dalam cakupannya. Anda tidak bisa menggunakan nama yang sama dengan variabel yang sudah terdefinisi sebelumnya. Anda boleh menggunakan nama variabel yang sama selama cakupannya berbeda, contohnya variabel yang berada dalam sebuah fungsi berbeda.
+2. Nama Variabel Hanya Terdiri dari Karakter Tertentu
+   Nama variabel tidak boleh mengandung karakter selain huruf, angka, garis bawah (underscore), dan tanda dolar
+3. Nama Variabel Tidak Boleh Diawali dengan Angka
+   Walau angka boleh digunakan dalam penamaan variabel, tetapi jika nama variabel diawali dengan angka, nama tersebut dianggap salah
