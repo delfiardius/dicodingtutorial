@@ -1,4 +1,4 @@
-# Pengenalan JavaScript
+# JavaScript
 
 ## Pemrograman
 
@@ -24,3 +24,13 @@ Misalnya, developer membuat sebuah program dengan suatu bahasa yang menggunakan 
 ### Scripting Language
 
 Tidak seperti compiled language, sebuah program atau source code yang ditulis dengan scripting language tidak memerlukan compiler. Source code dapat langsung diberikan, diterjemahkan, dan dijalankan oleh mesin. Mesin ini menggunakan interpreter dalam melakukannya. Contoh yang sangat dekat dengan kita adalah browser. Masing-masing aplikasi pasti membawa kode JavaScript dan langsung dibaca oleh browser. Beberapa bahasa pemrograman yang menggunakan interpreter adalah JavaScript, PHP, Python, dsb.
+
+## Pengenalan JavaScript
+
+JavaScript termasuk dalam salah satu bahasa pemrograman yang menggunakan interpreter (scripting language). Artinya, kita dapat menulis kode dengan bahasa ini dan langsung diserahkan ke mesin. Baris per baris kode akan diterjemahkan dan dieksekusi oleh mesin. Jika ada kode yang salah, error akan langsung ditampilkan pada saat runtime (program berjalan).
+
+JavaScript sudah sangat marak digunakan dalam pengembangan aplikasi web. Bagi developer web, mereka sudah sangat andal dalam membangun beragam website dengan HTML (HyperText Markup Language) sebagai pembentuk struktur halaman dan CSS (Cascading Style Sheet) untuk styling agar terlihat cantik.
+
+Namun, masalahnya adalah website agak statis. Tidak ada perubahan apa pun yang terjadi secara dinamis, baik dari sisi konten maupun styling. Misalnya, developer web ingin adanya interaktivitas elemen, perubahan styling, memiliki kendali terhadap struktur halaman, meminta data ke server, dll. Semua ini dilakukan hanya dengan JavaScript. Website menjadi lebih interaktif dan dinamis atas datangnya JavaScript.
+
+Pesatnya perkembangan teknologi menuntun JavaScript berkembang. Saat ini, JavaScript sudah merambah berbagai platform. Selain aplikasi browser, banyak juga aplikasi server, desktop, dan lainnya yang dapat dibangun dengan JavaScript. Ini tercapai berkat runtime JavaScript, seperti Node.js dan Bun. Bahkan, beberapa database management system (DBMS), salah satunya MongoDB, juga menggunakan JavaScript sebagai bahasa scripting dan kuerinya.
