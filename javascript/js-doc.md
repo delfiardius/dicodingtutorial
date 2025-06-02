@@ -64,3 +64,11 @@ Program yang dibuat dan dieksekusi di lingkungan browser biasanya dikenal dengan
 Node.js adalah runtime environment untuk JavaScript yang berbeda dari browser. Meskipun berbeda, seluruh fitur dari bahasa pemrograman JavaScript, yakni membuat variabel, melakukan operasi aritmetika, dsb. dapat dilakukan juga di sana. Hanya saja kita tidak memiliki akses lagi terhadap global object milik browser, seperti alert. Sebagai gantinya, Node.js memberikan akses kepada developer untuk mengakses file system, mengatur database, dan lainnya.
 
 ### Bun
+
+Ada alternatif yang dapat digunakan untuk menjalankan program dalam sistem komputer selain Node.js, yaitu Bun. Ia adalah JavaScript runtime baru yang menyajikan ekosistem JavaScript terkini dan berbagai fitur yang mengedepankan kecepatan. Jika mengacu ke halaman resminya, ia dibangun agar tetap kompatibel dengan berbagai fitur dari Node.js.
+
+Sama seperti Node.js, Bun mendukung berbagai sistem operasi, seperti Linux, MacOS, dan Windows. Untuk menjalankan program dengan Bun, kita perlu memasangnya terlebih dahulu dan kita dapatkan perintah bun di terminal setelahnya.
+
+Ada dua cara untuk menjalankan programnya, yaitu mengeksekusi berkas dan REPL.
+
+Itu dia beberapa runtime environment untuk bahasa pemrograman JavaScript. Ternyata ada beberapa runtime, ya. Meskipun demikian, JavaScript memiliki fitur yang seragam dengan beberapa platform atau runtime lainnya. Ya, hal ini karena mereka tetap patuh terhadap standar ECMAScript.
