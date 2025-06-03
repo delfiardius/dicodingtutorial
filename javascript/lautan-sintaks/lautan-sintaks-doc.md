@@ -57,3 +57,19 @@ Variabel yang dibuat dengan const juga umum disebut sebagai constant (konstan) k
    Nama variabel tidak boleh mengandung karakter selain huruf, angka, garis bawah (underscore), dan tanda dolar
 3. Nama Variabel Tidak Boleh Diawali dengan Angka
    Walau angka boleh digunakan dalam penamaan variabel, tetapi jika nama variabel diawali dengan angka, nama tersebut dianggap salah
+
+## Tipe Data
+
+Nilai yang dihasilkan dari sebuah expression dapat disebut juga sebagai data. Dalam pemrograman, data adalah elemen dasar yang sering kita simpan dan olah untuk membuat instruksi atau statement. Agar kita dapat menggunakan dan mengelola data dengan baik, penting untuk memahami berbagai tipe data yang ada, terutama pada JavaScript.
+
+Pada materi ini, kita akan membahas tipe data dasar atau yang lebih dikenal sebagai tipe data primitif. Dalam JavaScript, ada tipe data primitif yang penting untuk diketahui, yaitu string, number, boolean dan nilai kosong (null dan undefined).
+
+1. String
+   String adalah tipe data yang merepresentasikan teks. Data seperti nama, alamat, atau email adalah contoh data yang dikelola dalam bentuk string. Dalam JavaScript, nilai string diapit oleh tanda kutip. Ada tiga jenis tanda kutip yang dapat digunakan untuk membuat nilai string, yaitu petik tunggal (single quote), petik ganda (double quote), dan backticks (tanda backtick). Backticks sering disebut juga sebagai template literals karena memungkinkan kita menyisipkan JavaScript expressions untuk membentuk nilai string menggunakan notasi ${}.
+2. Number
+   Semua data berupa angka direpresentasikan dalam tipe data number, baik itu bilangan bulat maupun pecahan. Untuk membuat nilai number, kita cukup menuliskan angkanya secara langsung tanpa menggunakan tanda khusus. Selain angka normal, tipe data number juga memiliki nilai spesial, yaitu Infinity dan NaN. Nilai Infinity dihasilkan ketika kita melakukan operasi aritmetika yang tidak terdefinisi, seperti membagi sebuah nilai dengan nol. Adapun nilai NaN (Not-a-Number) dihasilkan ketika nilai non-numerik diubah ke tipe data number. Contohnya ketika kita mencoba mengonversi string yang bukan angka menjadi number.
+3. Boolean
+   Boolean adalah tipe data yang hanya memiliki dua nilai: true dan false. Boolean umumnya digunakan untuk merepresentasikan “ya” atau “tidak”, “ya” adalah true dan “tidak” adalah false. Untuk membuat nilai boolean, kita bisa menuliskan true atau false secara langsung. Dengan memahami cara kerja boolean, kita dapat menggunakan tipe data ini untuk membuat logika pemrograman yang lebih efektif dan efisien.
+4. Nilai Kosong
+   JavaScript memiliki dua nilai spesial yang merepresentasikan nilai kosong, yaitu null dan undefined. Keduanya digunakan untuk menunjukkan ketiadaan nilai (the absence of something).
+   **Null** banyak diadopsi dalam berbagai bahasa pemrograman sebagai tipe data standar untuk menunjukkan nilai yang tidak ada. Untuk membuat null, kita cukup menulis sintaksis null. Adapun **undefined** hadir dalam JavaScript sebagai nilai implisit ketika kita mendeklarasikan variabel tanpa menginisialisasi dengan nilai apa pun. Secara teknis, kita juga bisa secara eksplisit memberikan nilai undefined ke dalam sebuah variabel. Namun, hal ini tidak disarankan. Sebaiknya, gunakan null jika berniat untuk memberikan nilai kosong secara eksplisit.

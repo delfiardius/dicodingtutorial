@@ -2,7 +2,7 @@ const age = 10;
 const name = 'Dicoding';
 console.log(`Aku ${name}, umurku ${age} tahun.`);
 
-// ini adalah komentar
+// ini adalah #komentar
 /**
  * Yang 
  * ini 
@@ -11,7 +11,7 @@ console.log(`Aku ${name}, umurku ${age} tahun.`);
  * komentar
  * */ 
 
-// Materi variabel
+// Materi #variabel
 const id = 123;
 let username = 'Dicoding';
 
@@ -22,5 +22,5 @@ username = 'Dicoding Indonesia';
 console.log('Setelah diubah: ',username);
 console.log('Keunggulan penulisan variabel dengan let, nilainya dapat diubah');
 
-// Materi tipe_data
+// Materi #tipe_data
 
