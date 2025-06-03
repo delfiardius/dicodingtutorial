@@ -26,6 +26,15 @@ Expression dapat berupa hal-hal yang menghasilkan nilai, tidak hanya nilai stati
 
 Memahami istilah-istilah ini dalam struktur kode JavaScript sangatlah penting, baik dalam proses pembelajaran maupun pengembangan aplikasi nyata. Salah satu manfaat utamanya adalah ketika Anda menghadapi pesan error dari interpreter JavaScript yang sering menggunakan istilah statement atau expression dalam pesan error-nya.
 
+📌 **Pemahaman Akhir tentang Statement & Expression**
+
+Statement adalah instruksi yang diberikan kepada komputer untuk melakukan tugas tertentu.  
+Statement bisa berisi expression — bagian dari kode yang menghasilkan nilai (disebut juga data).  
+Data inilah yang sering kita olah dalam program, misalnya disimpan ke dalam variabel, digunakan dalam operasi, atau dikirim ke fungsi.
+
+💬 Catatan pribadi (pemahaman awal):
+Awalnya saya berpikir bahwa statement adalah instruksi yang di dalamnya terdapat expression (data) yang selalu disimpan ke dalam variabel. Ternyata tidak semua statement menyimpan data — ada juga yang langsung melakukan aksi seperti `console.log()` atau `if`.
+
 ## Komentar
 
 Komentar adalah teks bersifat penjelasan yang dapat dibaca oleh programmer dan ditulis dalam berkas kode. Pada JavaScript, untuk menuliskan teks komentar, ada dua cara, yaitu menggunakan tanda // dan /\* \*/. Teks yang ditulis dengan tanda tersebut dianggap bukan instruksi dan tidak akan dijalankan oleh interpreter.

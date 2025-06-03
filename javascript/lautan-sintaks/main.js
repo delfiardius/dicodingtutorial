@@ -21,3 +21,6 @@ console.log('Sebelum diubah: ',username);
 username = 'Dicoding Indonesia';
 console.log('Setelah diubah: ',username);
 console.log('Keunggulan penulisan variabel dengan let, nilainya dapat diubah');
+
+// Materi tipe_data
+
