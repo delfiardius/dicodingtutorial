@@ -49,3 +49,36 @@ let message = null;
 let _pesan;
 console.log(message);
 console.log(_pesan);
+
+// Materi #konversi_tipe_data
+console.log("\n====Konversi Tipe Data====");
+console.log("\n====Ubah ke String====");
+const number = 123;
+const boolean = true;
+const strNumber = String(number);
+const strBool = boolean.toString();
+
+console.log(strNumber);
+console.log(strBool);
+
+console.log("\n====Ubah ke Number====");
+const strNbr = '123';
+const strFloat = '3.14';
+const __benar = true;
+
+const numFromString = Number(strNbr);
+const floatFromString = Number(strFloat);
+const numFromBoolean = Number(__benar);
+
+console.log(numFromString);
+console.log(floatFromString);
+console.log(numFromBoolean);
+
+console.log("\n====Parse Int dan Parse FLoat====");
+const cm = '20.55cm';
+const px = '64.23px';
+const floatFromCM = parseFloat(cm);
+const floatFromPX = parseFloat(px);
+
+console.log(floatFromCM);
+console.log(floatFromPX);
