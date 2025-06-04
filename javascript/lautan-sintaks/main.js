@@ -24,3 +24,28 @@ console.log('Keunggulan penulisan variabel dengan let, nilainya dapat diubah');
 
 // Materi #tipe_data
 
+console.log("\n====Materi Tipe Data====");
+const currentYear = new Date().getFullYear();
+const text = `Sekarang adalah tahun ${currentYear}.`;
+console.log("\n====String====");
+console.log(text);
+
+console.log("\n====Number-Infinity====");
+const result = 50/0;
+console.log(result);
+
+console.log("\n====Number-NaN====");
+const hasil = Number('Dicoding');
+console.log(hasil);
+
+console.log("\n====Boolean====");
+const _benar = true;
+const _salah = false;
+console.log(_benar);
+console.log(_salah);
+
+console.log("\n====Null dan Undefined====");
+let message = null;
+let _pesan;
+console.log(message);
+console.log(_pesan);
