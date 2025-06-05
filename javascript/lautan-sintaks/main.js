@@ -106,3 +106,19 @@ const strNumber2 = '123';
 const result2 = strNumber2 * 2;
 
 console.log(result2);
+
+// Materi #operator
+/***
+ * Operator Unary: Satu operand, misalnya typeof
+ * Operator Binary: Dua operand, misalnya +, -, *, /, <, >, etc.
+ * Operator Ternary: Tiga operand
+ * Operator Assignment/Penugasan: (= -> sama dengan)
+ * Operator Arithmetic/Aritmetika: (% -> modulus, ++ -> increment, -- -> decrement, ** -> exponensial)
+ * Operator Comparison/Perbandingan: 
+ * (== -> sama, != -> tidak sama, === -> identik, !== -> tidak identik, 
+ * > -> lebih dari, >= -> lebih dari atau sama dengan, < -> kurang dari, <= -> kurang dari atau sama dengan)
+ * Operator Logical/Logika: (&& -> AND, || -> OR, ! -> NOT)
+ * Operator String: + (apa bila salah satu atau kedua nilai adalah string, maka nilai tersebut akan digabungkan menjadi string,
+ * tetapi apabila kedua nilai tersebut nilainya adalah angka, maka simbol + akan berubah fungsi sebagai operator aritmetika
+ * untuk menjumlahkan kedua bilangan tersebut.)
+ */
