@@ -51,7 +51,7 @@ console.log(message);
 console.log(_pesan);
 
 // Materi #konversi_tipe_data
-console.log("\n====Konversi Tipe Data====");
+console.log("\n====Konversi Tipe Data - Oleh Developer====");
 console.log("\n====Ubah ke String====");
 const number = 123;
 const boolean = true;
@@ -95,3 +95,14 @@ const boolFromNull = Boolean(empty);
 console.log(boolFromNumber);
 console.log(boolFromString);
 console.log(boolFromNull);
+
+console.log("\n====Konversi Implisit - Oleh Internal JS====");
+const age2 = 28;
+const pesan = 'Umurku: ' + age2;
+
+console.log(pesan);
+
+const strNumber2 = '123';
+const result2 = strNumber2 * 2;
+
+console.log(result2);
