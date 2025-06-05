@@ -82,3 +82,16 @@ const floatFromPX = parseFloat(px);
 
 console.log(floatFromCM);
 console.log(floatFromPX);
+
+console.log("\n====Ubah ke Boolean====");
+const number2 = 123;
+const string = 'Dicoding';
+const empty = null;
+
+const boolFromNumber = Boolean(number2);
+const boolFromString = Boolean(string);
+const boolFromNull = Boolean(empty);
+
+console.log(boolFromNumber);
+console.log(boolFromString);
+console.log(boolFromNull);
