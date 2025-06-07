@@ -26,3 +26,12 @@ console.log('\nConvertion with Arrow Function : ', temperatureInFahrenheit);
 const convertCelsiusToFahrenheitInConciseSyntax = (temperature) => (9/5) * temperature + 32;
 temperatureInFahrenheit = convertCelsiusToFahrenheitInConciseSyntax(90);
 console.log('\nConvertion with Concise Arrow Function : ',temperatureInFahrenheit);
+
+/**
+ * Noted
+ * 
+ * Hal yang perlu dicatat adalah pembuatan arrow function hanya tersedia 
+ * dalam bentuk expression. Oleh karena itu, kita selalu menyimpan nilainya dalam variabel. 
+ * Selain itu, arrow function dengan gaya seperti ini hanya mampu menampung satu return value. 
+ * Silakan bungkus dengan tanda kurung kurawal buka-tutup jika memerlukan banyak kode.
+ * */ 
