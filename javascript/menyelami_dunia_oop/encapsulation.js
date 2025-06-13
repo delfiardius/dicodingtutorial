@@ -65,9 +65,15 @@
 // console.log('Setelah diubah: ', coffee.temperature);
 
 /**
- * Penambahan underscore (_) di variable temperature untuk menandakan bahwa nilai temperature tidak dapat diubah. Namun, sebenarnya penggunaan tanda underscore tidak benar-benar membuat property temperature tidak dapat diubah, ia masih dapat diubah. Penggunaan underscore hanyalah code convention yang disepakati oleh komunitas JavaScript.
+ * Penambahan underscore (_) di variable temperature untuk menandakan 
+ * bahwa nilai temperature tidak dapat diubah. Namun, sebenarnya 
+ * penggunaan tanda underscore tidak benar-benar membuat property 
+ * temperature tidak dapat diubah, ia masih dapat diubah. Penggunaan 
+ * underscore hanyalah code convention yang disepakati oleh komunitas 
+ * JavaScript.
  * 
- * Untuk membuat nilainya benar-benar tidak dapat diubah, Anda dapat melakukannya dengan cara berikut.
+ * Untuk membuat nilainya benar-benar tidak dapat diubah, Anda dapat 
+ * melakukannya dengan cara berikut.
  */
 
 class CoffeeMachine {
@@ -91,4 +97,5 @@ class CoffeeMachine {
   }
 }
 
-/**Sejak JavaScript versi ES2022, kita dapat menggunakan tanda hashtag (#) untuk membuat hak akses private pada property dan method.  */
+/**Sejak JavaScript versi ES2022, kita dapat menggunakan tanda hashtag 
+ * (#) untuk membuat hak akses private pada property dan method.  */
