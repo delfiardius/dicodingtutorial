@@ -1,0 +1,13 @@
+.contents {
+    border: 2px solid #000;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-element {
+    margin: 10px;
+    text-align: left;
+}
