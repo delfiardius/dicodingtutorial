@@ -31,4 +31,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('notifikasiSisaKarakter').style.visibility = 'hidden';
   });
 
+  document.getElementById('inputCaptcha').addEventListener('change', function () {
+    console.log('Input Captcha: change');
+
+    const inputCaptchaValue = document.getElementById('inputCaptcha').value;
+    const submitButtonStatus = document.getElementById('submitButton');
+
+    if (inputCaptchaValue === 'PRNU') {
+      submitButtonStatus.removeAttribute('disabled');
+    } else {
+      submitButtonStatus.setAttribute('disabled', '');
+    }
+  })
+
 });
