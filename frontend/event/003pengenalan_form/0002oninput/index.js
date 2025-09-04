@@ -55,6 +55,17 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Captcha Anda belum tepat :(');
       document.getElementById('submitButton').setAttribute('disabled', '');
     }
+
+    event.preventDefault();
+  })
+
+  /**menambahkan event onCopy dan onPaste */
+  document.getElementById('inputCopy').addEventListener('copy', function () {
+    alert('Anda telah meng-copy sesuatu...');
+  })
+
+  document.getElementById('inputPaste').addEventListener('paste', function () {
+    alert('Anda telah mem-paste sesuatu...');
   })
 
 });
