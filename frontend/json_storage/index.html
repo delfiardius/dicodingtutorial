@@ -175,6 +175,15 @@
           localStorage.setItem(storageKey, JSON.stringify(userData));
         }
       }
+
+      //   Fungsi untuk menampilkan data user yang tersimpan pada local storage.
+      function getUserList() {
+        if (checkForStorage()) {
+          return JSON.parse(localStorage.getItem(storageKey)) || [];
+        } else {
+          return [];
+        }
+      }
     </script>
   </body>
 </html>
