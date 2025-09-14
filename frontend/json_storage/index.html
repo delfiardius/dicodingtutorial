@@ -227,6 +227,17 @@
         putUserList(newUserData);
         renderUserList();
       });
+
+      //   Event handler untuk Render user list saat halaman dimuat
+      window.addEventListener("load", function () {
+        if (checkForStorage()) {
+          if (localStorage.getItem(storageKey) !== null) {
+            renderUserList();
+          }
+        } else {
+          alert("Browser Anda tidak mendukung Web Storage");
+        }
+      });
     </script>
   </body>
 </html>
