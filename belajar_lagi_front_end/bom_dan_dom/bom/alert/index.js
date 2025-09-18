@@ -1,0 +1,1 @@
+alert('Halo Dunia! ini adalah alert dari JavaScript');
