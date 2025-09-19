@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOM Member - Prompt</title>
+  </head>
+  <body>
+    <h2 id="tampilPesan"></h2>
+    <p id="tampilTypeInput"></p>
+
+    <script>
+      let inputPesan = prompt("Berikan input untuk mengetahui tipe datanya");
+
+      if (inputPesan === null) {
+        inputPesan = "User menekan tombol Batal";
+      } else if (inputPesan === "") {
+        inputPesan = "User menekan tombol OK tanpa mengisi apapun";
+      } else if (!isNaN(inputPesan)) {
+        inputPesan = Number(inputPesan);
+      } else {
+        inputPesan = String(inputPesan);
+      }
+
+      document.getElementById("tampilPesan").innerHTML = inputPesan;
+      document.getElementById(
+        "tampilTypeInput"
+      ).innerHTML = `Tipe data inputPesan adalah ${typeof inputPesan}`;
+    </script>
+  </body>
+</html>
