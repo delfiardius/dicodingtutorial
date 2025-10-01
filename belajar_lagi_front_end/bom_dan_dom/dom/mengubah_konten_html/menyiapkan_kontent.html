@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - Cube World</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+      .cube {
+        width: 200px;
+        height: auto;
+        border-radius: 16px;
+        border: 8px solid #636363;
+      }
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .button button {
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 200px;
+      }
+      #caption {
+        font-size: 18px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Its Cube Time!</h2>
+    <img
+      src="https://assets.cdn.dicoding.com/original/commons/homepage-dicoding-challenge-illustration.png"
+      alt="Its a rubiks cube!"
+      class="cube"
+    />
+    <p id="caption">
+      <b>Sudah siap untuk memecahkan teka-teki permainan tersebut?</b>
+    </p>
+    <div class="button-group">
+      <div class="button">
+        <button>Sejarah</button>
+      </div>
+      <div class="button">
+        <button>Permainan</button>
+      </div>
+      <div class="button">
+        <button>Fun Fact</button>
+      </div>
+      <div class="button">
+        <button>Play (Coming Soon)</button>
+      </div>
+      <div class="button">
+        <button>Exit</button>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
