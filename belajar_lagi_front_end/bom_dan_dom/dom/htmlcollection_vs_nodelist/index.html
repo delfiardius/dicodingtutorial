@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTMLCollection vs NodeList</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <h1>HTMLCollection vs NodeList</h1>
+    <p>
+      Perbedaan utama antara HTMLCollection dan NodeList adalah HTMLCollection
+      hanya berisi elemen-elemen HTML, sedangkan NodeList dapat berisi berbagai
+      jenis node, termasuk elemen, teks, dan komentar. Selain itu,
+      HTMLCollection bersifat "live", yang berarti ia secara otomatis
+      memperbarui dirinya sendiri ketika ada perubahan pada DOM, sedangkan
+      NodeList bisa bersifat "live" atau "static" tergantung pada metode yang
+      digunakan untuk membuatnya.
+    </p>
+
+    <!-- HTML Collection -->
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <p class="box">Paragraph</p>
+    <span class="box">Span</span>
+    <form action="">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Username" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Password" />
+      </div>
+    </form>
+
+    <div id="produk">
+      <div class="produk-item">Produk 1</div>
+      <div class="produk-item">Produk 2</div>
+      <div class="produk-item">Produk 3</div>
+      <div class="produk-item">Produk 4</div>
+      <div class="produk-item">Produk 5</div>
+    </div>
+
+    <!-- NodeList -->
+    <div>
+      Hello <span>World</span>
+      <!-- This is a comment -->
+    </div>
+
+    <!-- Js -->
+    <script>
+      // Ambil koleksi awal
+      const produkItem = document.getElementsByClassName("produk-item");
+      const produkItem2 = document.querySelectorAll(".produk-item");
+
+      console.log("Sebelum Penambahan");
+      console.log(produkItem.length); // HTMLCollection
+      console.log(produkItem2.length); // NodeList
+
+      // Tambahkan Produk 6
+      const produk6 = document.createElement("div");
+      produk6.className = "produk-item";
+      produk6.innerText = "Produk 6";
+      // document.body.appendChild(produk6); // ditambahkan di akhir <body>
+
+      console.log("Setelah Penambahan");
+      console.log(produkItem.length); // HTMLCollection
+      console.log(produkItem2.length); // NodeList
+
+      // Tampilkan semua isi HTMLCollection
+      for (let i = 0; i < produkItem.length; i++) {
+        console.log(`HTMLCollection[${i}] :`, produkItem[i].textContent);
+      }
+
+      // Tampilkan semua isi NodeList
+      produkItem2.forEach((item, index) => {
+        console.log(`NodeList[${index}] :`, item.textContent);
+      });
+
+      // Sisipkan produk 6 setelah produk 5
+      const lastProduk = produkItem[produkItem.length - 1];
+      lastProduk.insertAdjacentElement("afterend", produk6);
+
+      // Tambahkan produk 7
+      const produk7 = document.createElement("div");
+      produk7.className = "produk-item";
+      produk7.textContent = "Produk 7";
+
+      produkItem[5].insertAdjacentElement("afterend", produk7);
+
+      const produk8 = document.createElement("div");
+      produk8.className = "produk-item";
+      produk8.textContent = "Produk 8";
+
+      const produkTerakhir = produkItem[produkItem.length - 1];
+      produkTerakhir.insertAdjacentElement("afterend", produk8);
+    </script>
+  </body>
+</html>
