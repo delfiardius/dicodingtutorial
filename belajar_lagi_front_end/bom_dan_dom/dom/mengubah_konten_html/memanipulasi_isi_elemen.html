@@ -1,0 +1,164 @@
+<!-- 
+ Memanipulasi konten dengan innerText dan innerHTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube World - Manipulasi Content</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+      .cube {
+        border-radius: 16px;
+        border: 8px solid #636363;
+      }
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .button button {
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 200px;
+      }
+      #caption {
+        font-size: 18px;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Its Cube Time!</h2>
+    <img
+      src="https://assets.cdn.dicoding.com/original/commons/homepage-dicoding-challenge-illustration.png"
+      alt="Its a rubiks cube!"
+      class="cube"
+      id="gambar"
+    />
+    <p id="caption">
+      <b>Sudah siap untuk memecahkan teka-teki permainan tersebut?</b>
+    </p>
+    <div class="button-group">
+      <div class="button">
+        <button>Sejarah</button>
+      </div>
+      <div class="button">
+        <button>Permainan</button>
+      </div>
+      <div class="button">
+        <button>Fun Fact</button>
+      </div>
+      <div class="button">
+        <button>Play (Coming Soon)</button>
+      </div>
+      <div class="button">
+        <button>Exit</button>
+      </div>
+    </div>
+    <hr />
+    <div id="links">
+      <p>Situs lainnya yang tidak kalah menarik:</p>
+      <ul>
+        <li>
+          <a href="http://www.dicoding.com" id="dicodingLink">Dicoding</a>
+        </li>
+        <li><a href="http://www.google.com" id="googleLink">Google</a></li>
+      </ul>
+    </div>
+    <script>
+      // Menyesuaikan ukuran gambar yang terlalu kecil
+      const gambar = document.getElementById("gambar");
+      gambar.setAttribute("width", 300);
+      gambar.setAttribute("height", 215);
+
+      //   Menonaktifkan button ke-4 (Play (Coming Soon))
+      const buttons = document.querySelectorAll(".button");
+      const playButton = buttons[3];
+      const playBtnElement = playButton.children[0];
+      playBtnElement.setAttribute("disabled", true);
+
+      // Mengakses element menggunakan method getElementById()
+      const links = document.getElementById("links");
+
+      // memanipulasi konten dengan innerText
+      /**
+       * @TODO
+       * 1. ambil elemen nya terlebih dahulu menggunakan getElementById()
+       * 2. ubah isi teks dari elemen tersebut sesuai dengan instruksi di bawah ini
+       *    - Ubah teks link Dicoding menjadi "Dicoding - Platform Belajar Coding Online"
+       *    - Ubah teks link Google menjadi "Google - Mesin Pencari Terpopuler di Dunia"
+       */
+      const dicoding = document.getElementById("dicodingLink");
+      dicoding.innerText = "Dicoding - Platform Belajar Coding Online";
+
+      const google = document.getElementById("googleLink");
+      google.innerText = "Google - Mesin Pencari Terpopuler di Dunia";
+
+      //   memanipulasi konten dengan innerHTML
+      /**
+       * Kata kuncinya pada langkah ini adalah "tag HTML"
+       *
+       * @TODO
+       * 1. panggil atribut innerHTML dari variabel dicoding atau google
+       * 2. ubah isi HTML dari elemen tersebut sesuai dengan instruksi di bawah ini
+       *    - Ubah isi HTML link Dicoding menjadi "<i>Dicoding - Platform Belajar Coding Online</i>"
+       *    - Ubah isi HTML link Google menjadi "<i>Google - Mesin Pencari Terpopuler di Dunia</i>"
+       */
+
+      dicoding.innerHTML = "<i>Dicoding - Platform Belajar Coding Online</i>";
+      /**
+       * Catatan: Pada langkah ini, kita mengubah isi HTML dari elemen
+       * Jika melakukan assignment menggunakan innerText, maka teks akan muncul beserta tag HTML-nya
+       * Sedangkan jika menggunakan innerHTML, maka tag HTML akan di-render sesuai fungsinya.
+       */
+
+      google.innerHTML = "<i>Google - Mesin Pencari Terpopuler di Dunia</i>";
+
+      // Memanipulasi Style kontent dengan style.property
+      /**
+       * @TODO
+       * 1. ubah style dari elemen caption dicoding dan google
+       *    - ubah warna teks menjadi #FF5733
+       *    - ubah font size menjadi 20px
+       *    - ubah font weight menjadi bold
+       * 2. Ubah sudut border button dengan nilai "4px"
+       */
+
+      // Ubah style caption dicoding dan google
+      dicoding.style.color = "#FF5733";
+      dicoding.style.fontSize = "20px";
+      dicoding.style.fontWeight = "bold";
+
+      google.style.color = "#FF56773";
+      google.style.fontSize = "20px";
+      google.style.fontWeight = "bold";
+
+      // Ubah sudut border button dengan nilai "4px"
+      for (const button of buttons) {
+        // const btnElement = button.children[0];
+        // btnElement.style.borderRadius = "4px";
+
+        button.children[0].style.borderRadius = "4px";
+      }
+
+      /**
+       * Catatan:
+       * 1. Nama properti dari objek DOM mengikuti standar penamaan variabel khusus JavaScript (camelCase)
+       * 2. Penamaannya tidak boleh mengandung tanda "-"
+       *   Contoh:
+       *   - background-color (CSS) -> backgroundColor (JavaScript)
+       *   - font-size (CSS) -> fontSize (JavaScript)
+       *   - border-radius (CSS) -> borderRadius (JavaScript)
+       */
+    </script>
+  </body>
+</html>
